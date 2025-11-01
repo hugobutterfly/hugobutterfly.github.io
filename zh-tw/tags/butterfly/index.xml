@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Butterfly on 我的 Butterfly 部落格</title><link>https://hugobutterfly.github.io/zh-tw/tags/butterfly/</link><description>Recent content in Butterfly on 我的 Butterfly 部落格</description><generator>Hugo</generator><language>zh-TW</language><managingEditor>your.email@example.com (Your Name)</managingEditor><webMaster>your.email@example.com (Your Name)</webMaster><lastBuildDate>Tue, 29 Oct 2024 10:00:00 +0800</lastBuildDate><atom:link href="https://hugobutterfly.github.io/zh-tw/tags/butterfly/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://hugobutterfly.github.io/zh-tw/2024/10/hello-world/</link><pubDate>Tue, 29 Oct 2024 10:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/zh-tw/2024/10/hello-world/</guid><description>&lt;h1 id="hello-world"&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;欢迎使用 Hugo Butterfly 主题！&lt;/p&gt;
+&lt;p&gt;這是一篇测試文章，用于验證主题的基本功能。&lt;/p&gt;
+&lt;h2 id="功能特性"&gt;功能特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;响應式設計&lt;/li&gt;
+&lt;li&gt;暗色模式&lt;/li&gt;
+&lt;li&gt;代码高亮&lt;/li&gt;
+&lt;li&gt;搜索功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;"&gt;&lt;tr&gt;&lt;td style="vertical-align:top;padding:0;margin:0;border:0;"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
+&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;console&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;log&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#39;Hello, Hugo Butterfly!&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id="总结"&gt;总结&lt;/h2&gt;
+&lt;p&gt;Hugo Butterfly 是一個功能強大的博客主题。&lt;/p&gt;</description></item></channel></rss>

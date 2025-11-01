@@ -1,0 +1,749 @@
+<!doctype html><html lang=zh-tw data-theme=light><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><title>代码高亮测試 | 我的 Butterfly 部落格</title><meta name=author content="Your Name,your.email@example.com"><meta name=copyright content="Your Name"><meta name=format-detection content="telephone=no"><meta name=theme-color content="#ffffff" media="(prefers-color-scheme: light)"><meta name=theme-color content="#0d0d0d" media="(prefers-color-scheme: dark)"><meta name=description content="测試代码高亮功能"><meta name=keywords content="测試,代码高亮"><meta name=robots content="index, follow"><meta name=googlebot content="index, follow"><meta property="og:type" content="article"><meta property="og:title" content="代码高亮测試"><meta property="og:description" content="测試代码高亮功能"><meta property="og:url" content="https://hugobutterfly.github.io/zh-tw/2024/10/code-highlighting-test/"><meta property="og:site_name" content="我的 Butterfly 部落格"><meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"><meta property="og:image:alt" content="代码高亮测試"><meta property="og:locale" content="zh-tw"><meta property="article:published_time" content="2024-10-30T10:00:00+08:00"><meta property="article:modified_time" content="2024-10-30T10:00:00+08:00"><meta property="article:author" content="Your Name"><meta property="article:section" content="技術"><meta property="article:tag" content="测試"><meta property="article:tag" content="代码高亮"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="代码高亮测試"><meta name=twitter:description content="测試代码高亮功能"><meta name=twitter:image content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"><meta name=twitter:image:alt content="代码高亮测試"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"代码高亮测試","description":"测試代码高亮功能","datePublished":"2024-10-30T10:00:00\u002b08:00","dateModified":"2024-10-30T10:00:00\u002b08:00","author":{"@type":"Person","name":"Your Name","url":"https:\/\/example.org"},"image":"https:\/\/images.unsplash.com\/photo-1461749280684-dccba630e2f6?w=800","publisher":{"@type":"Organization","name":"我的 Butterfly 部落格","logo":{"@type":"ImageObject","url":"https:\/\/hugobutterfly.github.io\/images\/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugobutterfly.github.io\/zh-tw\/2024\/10\/code-highlighting-test\/"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"我的 Butterfly 部落格","item":"https:\/\/hugobutterfly.github.io\/"},{"@type":"ListItem","position":2,"name":"文章","item":"https:\/\/hugobutterfly.github.io\/zh-tw\/posts\/"},{"@type":"ListItem","position":3,"name":"代码高亮测試","item":"https:\/\/hugobutterfly.github.io\/zh-tw\/2024\/10\/code-highlighting-test\/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Person","name":"Your Name","url":"https:\/\/example.org","email":"your.email@example.com","image":"https:\/\/hugobutterfly.github.io\/images\/avatar.png","description":"這是我的個人簡介","sameAs":["https:\/\/github.com\/ouraihub-hugo-themes\/hugo-butterfly","https:\/\/twitter.com\/yourusername","mailto:your.email@example.com"]}</script><link rel=canonical href=https://hugobutterfly.github.io/zh-tw/2024/10/code-highlighting-test/><link rel=icon href=/images/favicon.ico><link rel="shortcut icon" href=/images/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=stylesheet href=/css/main.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin=anonymous referrerpolicy=no-referrer><script>(function(){"use strict";const e="theme-mode";function t(){try{const t=localStorage.getItem(e);if(t==="dark"||t==="light")return t}catch(e){console.warn("Failed to access localStorage:",e)}return window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function n(e){const t=document.documentElement;t.classList.remove("light","dark"),t.classList.add(e),t.setAttribute("data-theme",e)}const s=t();n(s)})()</script></head><body class=antialiased><div id=body-wrap class=post><header id=page-header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" data-header><nav id=nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between opacity-0 transition-opacity duration-500" data-nav><div id=blog-info class="flex items-center flex-1 min-w-0"><a href=/ class="flex items-center space-x-2 min-w-0"><img src=/images/logo.png alt="我的 Butterfly 部落格" class="site-icon h-9 w-auto flex-shrink-0"><span class="site-name text-xl font-bold text-gray-100 dark:text-white truncate">
+我的 Butterfly 部落格</span></a></div><div id=menus class="flex items-center space-x-1"><div id=search-button class="hidden lg:block"><button class="search site-page px-3 py-2 text-sm transition-colors" aria-label=開啟搜尋>
+<i class="fas fa-search fa-fw"></i>
+<span class=ml-1>搜尋</span></button></div><div class="menus_items hidden lg:flex items-center"><div class=menus_item><a href=/zh-tw/ class="site-page relative flex items-center px-3 py-2 text-sm text-[var(--color-nav-text)] hover:text-[var(--color-nav-text-hover)] hover:bg-[var(--color-nav-bg-hover)] transition-colors group"><i class="fas fa-home fa-fw mr-1"></i><span>首頁</span></a></div><div class=menus_item><a href=/zh-tw/posts/ class="site-page relative flex items-center px-3 py-2 text-sm text-[var(--color-nav-text)] hover:text-[var(--color-nav-text-hover)] hover:bg-[var(--color-nav-bg-hover)] transition-colors group"><i class="fas fa-book fa-fw mr-1"></i><span>文章</span></a></div><div class=menus_item><a href=/zh-tw/categories/ class="site-page relative flex items-center px-3 py-2 text-sm text-[var(--color-nav-text)] hover:text-[var(--color-nav-text-hover)] hover:bg-[var(--color-nav-bg-hover)] transition-colors group"><i class="fas fa-folder-open fa-fw mr-1"></i><span>分類</span></a></div><div class=menus_item><a href=/zh-tw/tags/ class="site-page relative flex items-center px-3 py-2 text-sm text-[var(--color-nav-text)] hover:text-[var(--color-nav-text-hover)] hover:bg-[var(--color-nav-bg-hover)] transition-colors group"><i class="fas fa-tags fa-fw mr-1"></i><span>標籤</span></a></div><div class="menus_item relative group"><span class="site-page flex items-center px-3 py-2 text-sm text-[var(--color-nav-text)] hover:text-[var(--color-nav-text-hover)] hover:bg-[var(--color-nav-bg-hover)] cursor-pointer transition-colors"><i class="fas fa-ellipsis-h fa-fw mr-1"></i><span>更多</span>
+<i class="fas fa-chevron-down ml-1 text-xs transition-transform duration-300 group-hover:rotate-180"></i></span><ul class="menus_item_child absolute right-[-60px] mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden"><li class="hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg"><a href=/zh-tw/archives/ class="site-page child flex items-center px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-archive fa-fw mr-2"></i><span>歸檔</span></a></li><li class="hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg"><a href=/zh-tw/links/ class="site-page child flex items-center px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-link fa-fw mr-2"></i><span>友情連結</span></a></li><li class="hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg"><a href=/zh-tw/about/ class="site-page child flex items-center px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-user fa-fw mr-2"></i><span>關於</span></a></li></ul></div></div><div class="language-switcher relative group hidden lg:block"><button class="site-page flex items-center px-3 py-2 rounded-lg transition-colors" aria-label=切換語言 aria-expanded=false aria-haspopup=true data-language-toggle>
+<i class="fas fa-globe fa-fw"></i>
+<span class="ml-1.5 text-sm">繁中</span>
+<i class="fas fa-chevron-down ml-1 text-xs transition-transform duration-200 group-hover:rotate-180"></i></button><ul class="language-menu absolute right-[-60px] mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50" role=menu aria-label=切換語言><li role=none><a href=/zh/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" role=menuitem lang=zh-CN hreflang=zh-CN><span class="flex items-center"><span class=mr-2>🇨🇳</span><span>简体中文</span></span></a></li><li role=none><a href=/en/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" role=menuitem lang=en-US hreflang=en-US><span class="flex items-center"><span class=mr-2>🇺🇸</span><span>English</span></span></a></li><li role=none><a href=/zh-tw/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors bg-gray-50 dark:bg-gray-750 text-primary dark:text-primary font-semibold" role=menuitem lang=zh-TW hreflang=zh-TW aria-current=true><span class="flex items-center"><span class=mr-2>🇹🇼</span><span>繁體中文</span>
+</span><i class="fas fa-check text-primary"></i></a></li></ul></div><div class="mobile-language-switcher lg:hidden border-t border-gray-200 dark:border-gray-700 pt-4 mt-4"><div class="menu-section-title text-xs text-gray-500 dark:text-gray-400 uppercase px-4 mb-2 font-semibold">切換語言</div><a href=/zh/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" lang=zh-CN hreflang=zh-CN><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇨🇳</span><span>简体中文</span>
+</span></a><a href=/en/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" lang=en-US hreflang=en-US><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇺🇸</span><span>English</span>
+</span></a><a href=/zh-tw/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-gray-100 dark:bg-gray-800 text-primary dark:text-primary font-semibold" lang=zh-TW hreflang=zh-TW aria-current=true><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇹🇼</span><span>繁體中文</span>
+</span><i class="fas fa-check text-primary"></i></a></div><button data-darkmode-toggle class="site-page p-2 rounded-lg transition-colors" aria-label="Toggle dark mode" aria-pressed=false title="Toggle dark mode">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003.0 0012 21a9.003 9.003.0 008.354-5.646z"/></svg></button><div id=toggle-menu class=lg:hidden><button data-menu-toggle class="site-page p-2 rounded-lg transition-colors" aria-label="Toggle menu" aria-expanded=false>
+<i class="fas fa-bars fa-fw text-xl"></i></button></div></div></nav></header><div id=sidebar-menus class="fixed inset-y-0 right-0 w-72 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full transition-transform duration-300 z-[100] lg:hidden overflow-y-auto" data-mobile-menu><div class=p-6><div class="flex justify-end mb-6"><button data-menu-close class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close menu">
+<i class="fas fa-times text-xl"></i></button></div><div class="flex flex-col space-y-2"><button class="search mobile-menu-item text-left px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label=開啟搜尋>
+<i class="fas fa-search fa-fw mr-2"></i>
+<span>搜尋</span>
+</button><a href=/zh-tw/ class="mobile-menu-item flex items-center px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"><i class="fas fa-home fa-fw mr-2"></i><span>首頁</span>
+</a><a href=/zh-tw/posts/ class="mobile-menu-item flex items-center px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"><i class="fas fa-book fa-fw mr-2"></i><span>文章</span>
+</a><a href=/zh-tw/categories/ class="mobile-menu-item flex items-center px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"><i class="fas fa-folder-open fa-fw mr-2"></i><span>分類</span>
+</a><a href=/zh-tw/tags/ class="mobile-menu-item flex items-center px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"><i class="fas fa-tags fa-fw mr-2"></i><span>標籤</span></a><div class=mobile-menu-group><button class="mobile-menu-item mobile-menu-parent w-full flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" data-submenu-toggle>
+<span class="flex items-center"><i class="fas fa-ellipsis-h fa-fw mr-2"></i><span>更多</span>
+</span><i class="fas fa-chevron-down transition-transform duration-300" data-submenu-icon></i></button><div class="mobile-submenu max-h-0 overflow-hidden transition-all duration-300" data-submenu><div class="pl-4 pt-1 space-y-1"><a href=/zh-tw/archives/ class="mobile-menu-item mobile-menu-child flex items-center px-4 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-archive fa-fw mr-2"></i><span>歸檔</span>
+</a><a href=/zh-tw/links/ class="mobile-menu-item mobile-menu-child flex items-center px-4 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-link fa-fw mr-2"></i><span>友情連結</span>
+</a><a href=/zh-tw/about/ class="mobile-menu-item mobile-menu-child flex items-center px-4 py-2 rounded-lg text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-primary transition-colors"><i class="fas fa-user fa-fw mr-2"></i><span>關於</span></a></div></div></div><div class="language-switcher relative group hidden lg:block"><button class="site-page flex items-center px-3 py-2 rounded-lg transition-colors" aria-label=切換語言 aria-expanded=false aria-haspopup=true data-language-toggle>
+<i class="fas fa-globe fa-fw"></i>
+<span class="ml-1.5 text-sm">繁中</span>
+<i class="fas fa-chevron-down ml-1 text-xs transition-transform duration-200 group-hover:rotate-180"></i></button><ul class="language-menu absolute right-[-60px] mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50" role=menu aria-label=切換語言><li role=none><a href=/zh/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" role=menuitem lang=zh-CN hreflang=zh-CN><span class="flex items-center"><span class=mr-2>🇨🇳</span><span>简体中文</span></span></a></li><li role=none><a href=/en/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" role=menuitem lang=en-US hreflang=en-US><span class="flex items-center"><span class=mr-2>🇺🇸</span><span>English</span></span></a></li><li role=none><a href=/zh-tw/2024/10/code-highlighting-test/ class="flex items-center justify-between px-4 py-2.5 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors bg-gray-50 dark:bg-gray-750 text-primary dark:text-primary font-semibold" role=menuitem lang=zh-TW hreflang=zh-TW aria-current=true><span class="flex items-center"><span class=mr-2>🇹🇼</span><span>繁體中文</span>
+</span><i class="fas fa-check text-primary"></i></a></li></ul></div><div class="mobile-language-switcher lg:hidden border-t border-gray-200 dark:border-gray-700 pt-4 mt-4"><div class="menu-section-title text-xs text-gray-500 dark:text-gray-400 uppercase px-4 mb-2 font-semibold">切換語言</div><a href=/zh/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" lang=zh-CN hreflang=zh-CN><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇨🇳</span><span>简体中文</span>
+</span></a><a href=/en/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" lang=en-US hreflang=en-US><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇺🇸</span><span>English</span>
+</span></a><a href=/zh-tw/2024/10/code-highlighting-test/ class="mobile-menu-item flex items-center justify-between px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors bg-gray-100 dark:bg-gray-800 text-primary dark:text-primary font-semibold" lang=zh-TW hreflang=zh-TW aria-current=true><span class="flex items-center"><i class="fas fa-globe fa-fw mr-2"></i><span class=mr-2>🇹🇼</span><span>繁體中文</span>
+</span><i class="fas fa-check text-primary"></i></a></div></div></div></div><div id=menu-mask class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[99] lg:hidden" data-menu-overlay></div><main id=content-inner class="container mx-auto px-4 sm:px-6 lg:px-8 py-8" role=main><div class="layout flex flex-col lg:flex-row gap-6"><div class="flex-1 min-w-0"><article id=post class=post-article><div class=post-cover-wrapper><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" alt=代码高亮测試 class=post-cover-image loading=lazy></div><div class=post-container><header class="post-header mb-8"><h1 class="post-title text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6">代码高亮测試</h1><div id=post-meta class="post-meta text-sm text-gray-600 dark:text-gray-400"><div class="meta-firstline flex flex-wrap items-center gap-x-4 gap-y-2 mb-3"><span class="post-meta-date flex items-center gap-2"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i>
+<span class=post-meta-label>發佈於:</span>
+<time class=post-meta-date-created datetime=2024-10-30T10:00:00+08:00 title="2024-10-30 10:00:00">2024-10-30
+</time></span><span class="post-meta-separator text-gray-400">|</span><span class="post-meta-date flex items-center gap-2">
+<i class="fas fa-history fa-fw post-meta-icon"></i>
+<span class=post-meta-label>更新於:</span>
+<time class=post-meta-date-updated datetime=2024-10-30T10:00:00+08:00 title="2024-10-30 10:00:00">2024-10-30
+</time></span><span class="post-meta-separator text-gray-400">|</span>
+<span class="post-meta-categories flex items-center gap-2"><i class="fas fa-folder fa-fw post-meta-icon"></i>
+<a href class="post-meta-category-link hover:text-primary transition-colors">技術</a></span></div><div class="meta-secondline flex flex-wrap items-center gap-x-4 gap-y-2"><span class="post-meta-wordcount flex items-center gap-2"><i class="far fa-file-word fa-fw post-meta-icon"></i>
+<span class=post-meta-label>字数:</span>
+<span class=word-count>949</span>
+</span><span class="post-meta-separator text-gray-400">|</span><span class="post-meta-readtime flex items-center gap-2">
+<i class="far fa-clock fa-fw post-meta-icon"></i>
+<span class=post-meta-label>阅读时长:</span>
+<span>5 分钟</span></span></div></div></header><div id=article-container class=post-content-wrapper><div class="post-content prose prose-lg dark:prose-invert max-w-none
+prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-gray-100
+prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4
+prose-h2:text-2xl prose-h2:mt-6 prose-h2:mb-3
+prose-h3:text-xl prose-h3:mt-5 prose-h3:mb-2
+prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:my-4
+prose-a:text-primary prose-a:no-underline hover:prose-a:text-primary-hover hover:prose-a:underline
+prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-strong:font-semibold
+prose-code:text-pink-600 dark:prose-code:text-pink-400 prose-code:bg-gray-100 dark:prose-code:bg-gray-800
+prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950 prose-pre:text-gray-100 prose-pre:rounded-lg prose-pre:shadow-lg
+prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-800/50
+prose-blockquote:pl-4 prose-blockquote:py-2 prose-blockquote:italic prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-400
+prose-ul:list-disc prose-ul:pl-6 prose-ul:my-4
+prose-ol:list-decimal prose-ol:pl-6 prose-ol:my-4
+prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:my-1
+prose-img:rounded-lg prose-img:shadow-md prose-img:my-6
+prose-hr:border-gray-300 dark:prose-hr:border-gray-700 prose-hr:my-8
+prose-table:border-collapse prose-table:w-full prose-table:my-6
+prose-th:bg-gray-100 dark:prose-th:bg-gray-800 prose-th:px-4 prose-th:py-2 prose-th:text-left prose-th:font-semibold
+prose-td:border prose-td:border-gray-300 dark:prose-td:border-gray-700 prose-td:px-4 prose-td:py-2"><h2 id=javascript-代码示例>JavaScript 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#75715e>// 這是一個 JavaScript 示例
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>greet</span>(<span style=color:#a6e22e>name</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>`Hello, </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>!`</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`Welcome to Hugo Butterfly Theme`</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>user</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Developer&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>age</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>25</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>skills</span><span style=color:#f92672>:</span> [<span style=color:#e6db74>&#39;JavaScript&#39;</span>, <span style=color:#e6db74>&#39;TypeScript&#39;</span>, <span style=color:#e6db74>&#39;Hugo&#39;</span>]
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>greet</span>(<span style=color:#a6e22e>user</span>.<span style=color:#a6e22e>name</span>);
+</span></span></code></pre></td></tr></table></div></div><h2 id=typescript-代码示例>TypeScript 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=display:flex><span><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>User</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>number</span>;
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>;
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>email</span>: <span style=color:#66d9ef>string</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UserService</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#a6e22e>users</span>: <span style=color:#66d9ef>User</span>[] <span style=color:#f92672>=</span> [];
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>addUser</span>(<span style=color:#a6e22e>user</span>: <span style=color:#66d9ef>User</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>void</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>users</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>user</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>getUserById</span>(<span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>number</span>)<span style=color:#f92672>:</span> <span style=color:#a6e22e>User</span> <span style=color:#f92672>|</span> <span style=color:#66d9ef>undefined</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>users</span>.<span style=color:#a6e22e>find</span>(<span style=color:#a6e22e>u</span> <span style=color:#f92672>=&gt;</span> <span style=color:#a6e22e>u</span>.<span style=color:#a6e22e>id</span> <span style=color:#f92672>===</span> <span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>service</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>UserService</span>();
+</span></span><span style=display:flex><span><span style=color:#a6e22e>service</span>.<span style=color:#a6e22e>addUser</span>({ <span style=color:#a6e22e>id</span>: <span style=color:#66d9ef>1</span>, <span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Alice&#39;</span>, <span style=color:#a6e22e>email</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;alice@example.com&#39;</span> });
+</span></span></code></pre></td></tr></table></div></div><h2 id=python-代码示例>Python 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Python 示例代码</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fibonacci</span>(n):
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34;計算斐波那契数列&#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> n <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>1</span>:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> n
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> fibonacci(n<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>) <span style=color:#f92672>+</span> fibonacci(n<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Calculator</span>:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>__init__</span>(self):
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>result <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>add</span>(self, x, y):
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>result <span style=color:#f92672>=</span> x <span style=color:#f92672>+</span> y
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>result
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>multiply</span>(self, x, y):
+</span></span><span style=display:flex><span>        self<span style=color:#f92672>.</span>result <span style=color:#f92672>=</span> x <span style=color:#f92672>*</span> y
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>result
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 使用示例</span>
+</span></span><span style=display:flex><span>calc <span style=color:#f92672>=</span> Calculator()
+</span></span><span style=display:flex><span>print(calc<span style=color:#f92672>.</span>add(<span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>3</span>))
+</span></span><span style=display:flex><span>print(calc<span style=color:#f92672>.</span>multiply(<span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>6</span>))
+</span></span></code></pre></td></tr></table></div></div><h2 id=go-代码示例>Go 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;time&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Person</span> <span style=color:#66d9ef>struct</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>Name</span> <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>Age</span>  <span style=color:#66d9ef>int</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> (<span style=color:#a6e22e>p</span> <span style=color:#a6e22e>Person</span>) <span style=color:#a6e22e>Greet</span>() <span style=color:#66d9ef>string</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Sprintf</span>(<span style=color:#e6db74>&#34;Hello, I&#39;m %s and I&#39;m %d years old&#34;</span>, <span style=color:#a6e22e>p</span>.<span style=color:#a6e22e>Name</span>, <span style=color:#a6e22e>p</span>.<span style=color:#a6e22e>Age</span>)
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>person</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>Person</span>{
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>Name</span>: <span style=color:#e6db74>&#34;John&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>Age</span>:  <span style=color:#ae81ff>30</span>,
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>person</span>.<span style=color:#a6e22e>Greet</span>())
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#e6db74>&#34;Current time:&#34;</span>, <span style=color:#a6e22e>time</span>.<span style=color:#a6e22e>Now</span>())
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></td></tr></table></div></div><h2 id=css-代码示例>CSS 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:#75715e>/* 現代化的 CSS 樣式 */</span>
+</span></span><span style=display:flex><span>:<span style=color:#a6e22e>root</span> {
+</span></span><span style=display:flex><span>  --primary-color: <span style=color:#ae81ff>#49b1f5</span>;
+</span></span><span style=display:flex><span>  --text-color: <span style=color:#ae81ff>#333</span>;
+</span></span><span style=display:flex><span>  --bg-color: <span style=color:#ae81ff>#fff</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.<span style=color:#a6e22e>card</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>padding</span>: <span style=color:#ae81ff>1.5</span><span style=color:#66d9ef>rem</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>background</span>: <span style=color:#a6e22e>var</span>(<span style=color:#f92672>--</span>bg<span style=color:#f92672>-</span><span style=color:#66d9ef>color</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>border-radius</span>: <span style=color:#ae81ff>8</span><span style=color:#66d9ef>px</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>box-shadow</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>2</span><span style=color:#66d9ef>px</span> <span style=color:#ae81ff>8</span><span style=color:#66d9ef>px</span> rgba(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0.1</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>transition</span>: <span style=color:#66d9ef>all</span> <span style=color:#ae81ff>0.3</span><span style=color:#66d9ef>s</span> <span style=color:#66d9ef>ease</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.<span style=color:#a6e22e>card</span>:<span style=color:#a6e22e>hover</span> {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>transform</span>: translateY(<span style=color:#ae81ff>-4</span><span style=color:#66d9ef>px</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>box-shadow</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>4</span><span style=color:#66d9ef>px</span> <span style=color:#ae81ff>12</span><span style=color:#66d9ef>px</span> rgba(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0.15</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>@<span style=color:#66d9ef>media</span> <span style=color:#f92672>(</span><span style=color:#f92672>max-width</span><span style=color:#f92672>:</span> <span style=color:#f92672>768px</span><span style=color:#f92672>)</span> {
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>card</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>padding</span>: <span style=color:#ae81ff>1</span><span style=color:#66d9ef>rem</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></td></tr></table></div></div><h2 id=html-代码示例>HTML 代码示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;zh-CN&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;UTF-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;viewport&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>title</span>&gt;Hugo Butterfly Theme&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;stylesheet&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/css/main.css&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>header</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;site-header&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>nav</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;navbar&#34;</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/&#34;</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;logo&#34;</span>&gt;Butterfly&lt;/<span style=color:#f92672>a</span>&gt;
+</span></span><span style=display:flex><span>      &lt;<span style=color:#f92672>ul</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;menu&#34;</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/&#34;</span>&gt;首页&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/posts/&#34;</span>&gt;文章&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/about/&#34;</span>&gt;關于&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>      &lt;/<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>main</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>h1</span>&gt;欢迎使用 Hugo Butterfly&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>p</span>&gt;這是一個優雅的博客主题&lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>main</span>&gt;
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/js/bundle.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></td></tr></table></div></div><h2 id=bash-脚本示例>Bash 脚本示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Hugo 构建脚本</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;開始构建 Hugo 站點...&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 清理旧的构建文件</span>
+</span></span><span style=display:flex><span>rm -rf public
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 編译 TypeScript</span>
+</span></span><span style=display:flex><span>pnpm run ts:build
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 編译 CSS</span>
+</span></span><span style=display:flex><span>pnpm run css:build
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 构建 Hugo 站點</span>
+</span></span><span style=display:flex><span>hugo --minify
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;构建完成！&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=sql-查詢示例>SQL 查詢示例</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#75715e>-- 創建用户表
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> users (
+</span></span><span style=display:flex><span>    id INT <span style=color:#66d9ef>PRIMARY</span> <span style=color:#66d9ef>KEY</span> AUTO_INCREMENT,
+</span></span><span style=display:flex><span>    username VARCHAR(<span style=color:#ae81ff>50</span>) <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span> <span style=color:#66d9ef>UNIQUE</span>,
+</span></span><span style=display:flex><span>    email VARCHAR(<span style=color:#ae81ff>100</span>) <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>,
+</span></span><span style=display:flex><span>    created_at <span style=color:#66d9ef>TIMESTAMP</span> <span style=color:#66d9ef>DEFAULT</span> <span style=color:#66d9ef>CURRENT_TIMESTAMP</span>
+</span></span><span style=display:flex><span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- 插入数据
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> users (username, email) <span style=color:#66d9ef>VALUES</span>
+</span></span><span style=display:flex><span>    (<span style=color:#e6db74>&#39;alice&#39;</span>, <span style=color:#e6db74>&#39;alice@example.com&#39;</span>),
+</span></span><span style=display:flex><span>    (<span style=color:#e6db74>&#39;bob&#39;</span>, <span style=color:#e6db74>&#39;bob@example.com&#39;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>-- 查詢数据
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>SELECT</span> u.username, u.email, <span style=color:#66d9ef>COUNT</span>(p.id) <span style=color:#66d9ef>as</span> post_count
+</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> users u
+</span></span><span style=display:flex><span><span style=color:#66d9ef>LEFT</span> <span style=color:#66d9ef>JOIN</span> posts p <span style=color:#66d9ef>ON</span> u.id <span style=color:#f92672>=</span> p.user_id
+</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> u.id
+</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> post_count <span style=color:#66d9ef>DESC</span>;
+</span></span></code></pre></td></tr></table></div></div><h2 id=長代码示例测試高度限制>長代码示例（测試高度限制）</h2><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#75715e>// 這是一個很長的代码示例，用于测試高度限制和展開功能
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>BlogSystem</span> {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>constructor</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span> <span style=color:#f92672>=</span> [];
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>categories</span> <span style=color:#f92672>=</span> [];
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>tags</span> <span style=color:#f92672>=</span> [];
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>users</span> <span style=color:#f92672>=</span> [];
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 添加文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>addPost</span>(<span style=color:#a6e22e>post</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>newPost</span> <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>id</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>title</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>content</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>content</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>author</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>category</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>category</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>tags</span> <span style=color:#f92672>||</span> [],
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>createdAt</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>new</span> Date(),
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>updatedAt</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>new</span> Date(),
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>views</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>likes</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    };
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>newPost</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>newPost</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 獲取文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>getPost</span>(<span style=color:#a6e22e>id</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>find</span>(<span style=color:#a6e22e>post</span> =&gt; <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>id</span> <span style=color:#f92672>===</span> <span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 更新文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>updatePost</span>(<span style=color:#a6e22e>id</span>, <span style=color:#a6e22e>updates</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>post</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>getPost</span>(<span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>post</span>) {
+</span></span><span style=display:flex><span>      Object.<span style=color:#a6e22e>assign</span>(<span style=color:#a6e22e>post</span>, <span style=color:#a6e22e>updates</span>);
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>updatedAt</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> Date();
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>post</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 删除文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>deletePost</span>(<span style=color:#a6e22e>id</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>index</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>findIndex</span>(<span style=color:#a6e22e>post</span> =&gt; <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>id</span> <span style=color:#f92672>===</span> <span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>index</span> <span style=color:#f92672>!==</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>splice</span>(<span style=color:#a6e22e>index</span>, <span style=color:#ae81ff>1</span>);
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 搜索文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>searchPosts</span>(<span style=color:#a6e22e>keyword</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>filter</span>(<span style=color:#a6e22e>post</span> =&gt; 
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>title</span>.<span style=color:#a6e22e>includes</span>(<span style=color:#a6e22e>keyword</span>) <span style=color:#f92672>||</span> 
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>content</span>.<span style=color:#a6e22e>includes</span>(<span style=color:#a6e22e>keyword</span>)
+</span></span><span style=display:flex><span>    );
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 按分類獲取文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>getPostsByCategory</span>(<span style=color:#a6e22e>category</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>filter</span>(<span style=color:#a6e22e>post</span> =&gt; <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>category</span> <span style=color:#f92672>===</span> <span style=color:#a6e22e>category</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 按标签獲取文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>getPostsByTag</span>(<span style=color:#a6e22e>tag</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>.<span style=color:#a6e22e>filter</span>(<span style=color:#a6e22e>post</span> =&gt; <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>tags</span>.<span style=color:#a6e22e>includes</span>(<span style=color:#a6e22e>tag</span>));
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 獲取熱門文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>getPopularPosts</span>(<span style=color:#a6e22e>limit</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>posts</span>
+</span></span><span style=display:flex><span>      .<span style=color:#a6e22e>sort</span>((<span style=color:#a6e22e>a</span>, <span style=color:#a6e22e>b</span>) =&gt; <span style=color:#a6e22e>b</span>.<span style=color:#a6e22e>views</span> <span style=color:#f92672>-</span> <span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>views</span>)
+</span></span><span style=display:flex><span>      .<span style=color:#a6e22e>slice</span>(<span style=color:#ae81ff>0</span>, <span style=color:#a6e22e>limit</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 增加浏览量
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>incrementViews</span>(<span style=color:#a6e22e>id</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>post</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>getPost</span>(<span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>post</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>views</span><span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>post</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 點贊文章
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#a6e22e>likePost</span>(<span style=color:#a6e22e>id</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>post</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>getPost</span>(<span style=color:#a6e22e>id</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>post</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>post</span>.<span style=color:#a6e22e>likes</span><span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>post</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 使用示例
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>blog</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>BlogSystem</span>();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>blog</span>.<span style=color:#a6e22e>addPost</span>({
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;如何使用 Hugo 构建博客&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>content</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Hugo 是一個快速的静態網站生成器...&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Alice&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>category</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;技術&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#e6db74>&#39;Hugo&#39;</span>, <span style=color:#e6db74>&#39;Blog&#39;</span>, <span style=color:#e6db74>&#39;Static Site&#39;</span>]
+</span></span><span style=display:flex><span>});
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>blog</span>.<span style=color:#a6e22e>addPost</span>({
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;TypeScript 最佳实践&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>content</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;TypeScript 提供了類型安全...&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>author</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Bob&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>category</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;編程&#39;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>tags</span><span style=color:#f92672>:</span> [<span style=color:#e6db74>&#39;TypeScript&#39;</span>, <span style=color:#e6db74>&#39;JavaScript&#39;</span>, <span style=color:#e6db74>&#39;Best Practices&#39;</span>]
+</span></span><span style=display:flex><span>});
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;所有文章:&#39;</span>, <span style=color:#a6e22e>blog</span>.<span style=color:#a6e22e>posts</span>);
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;技術分類文章:&#39;</span>, <span style=color:#a6e22e>blog</span>.<span style=color:#a6e22e>getPostsByCategory</span>(<span style=color:#e6db74>&#39;技術&#39;</span>));
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;熱門文章:&#39;</span>, <span style=color:#a6e22e>blog</span>.<span style=color:#a6e22e>getPopularPosts</span>(<span style=color:#ae81ff>5</span>));
+</span></span></code></pre></td></tr></table></div></div></div></div><div class="post-footer mt-8 space-y-8"><div class="tag-share-wrapper flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-4"><div class=post-tags><div class="flex flex-wrap items-center gap-2"><i class="fas fa-tags text-gray-500 dark:text-gray-400"></i><a href class="inline-flex items-center px-3 py-1 rounded-full text-sm
+bg-gray-100 dark:bg-gray-800
+text-gray-700 dark:text-gray-300
+hover:bg-primary hover:text-white dark:hover:bg-primary
+transition-colors duration-200">
+#测試
+</a><a href class="inline-flex items-center px-3 py-1 rounded-full text-sm
+bg-gray-100 dark:bg-gray-800
+text-gray-700 dark:text-gray-300
+hover:bg-primary hover:text-white dark:hover:bg-primary
+transition-colors duration-200">#代码高亮</a></div></div><div class=post-share><div class="flex items-center gap-4"><span class="text-sm text-gray-600 dark:text-gray-400 font-medium">分享:</span><div class="flex items-center gap-2"><a href="https://twitter.com/intent/tweet?text=%e4%bb%a3%e7%a0%81%e9%ab%98%e4%ba%ae%e6%b5%8b%e8%a9%a6&url=https%3a%2f%2fhugobutterfly.github.io%2fzh-tw%2f2024%2f10%2fcode-highlighting-test%2f" target=_blank rel="noopener noreferrer" class="share-button inline-flex items-center justify-center w-10 h-10 rounded-full
+bg-[#1da1f2] hover:bg-[#1a8cd8] text-white transition-colors" title="分享到 Twitter"><i class="fab fa-twitter"></i>
+</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugobutterfly.github.io%2fzh-tw%2f2024%2f10%2fcode-highlighting-test%2f" target=_blank rel="noopener noreferrer" class="share-button inline-flex items-center justify-center w-10 h-10 rounded-full
+bg-[#1877f2] hover:bg-[#166fe5] text-white transition-colors" title="分享到 Facebook"><i class="fab fa-facebook-f"></i>
+</a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fhugobutterfly.github.io%2fzh-tw%2f2024%2f10%2fcode-highlighting-test%2f&title=%e4%bb%a3%e7%a0%81%e9%ab%98%e4%ba%ae%e6%b5%8b%e8%a9%a6" target=_blank rel="noopener noreferrer" class="share-button inline-flex items-center justify-center w-10 h-10 rounded-full
+bg-[#0077b5] hover:bg-[#006399] text-white transition-colors" title="分享到 LinkedIn"><i class="fab fa-linkedin-in"></i>
+</a><button type=button class="share-button inline-flex items-center justify-center w-10 h-10 rounded-full
+bg-gray-600 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600
+text-white transition-colors" title=复制链接 data-clipboard-text=https://hugobutterfly.github.io/zh-tw/2024/10/code-highlighting-test/ onclick='copyToClipboard("https://hugobutterfly.github.io/zh-tw/2024/10/code-highlighting-test/")'>
+<i class="fas fa-link"></i></button></div></div></div><script>function copyToClipboard(e){if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(e).then(()=>{alert("链接已复制到剪贴板！")}).catch(e=>{console.error("复制失败:",e)});else{const t=document.createElement("textarea");t.value=e,t.style.position="fixed",t.style.opacity="0",document.body.appendChild(t),t.select();try{document.execCommand("copy"),alert("链接已复制到剪贴板！")}catch(e){console.error("复制失败:",e)}document.body.removeChild(t)}}</script></div></div></div></article></div><aside id=aside-content class="aside-content aside-right"><div class="card-widget card-info text-center"><div class=avatar-img><img src=/images/avatar.png alt="Your Name" onerror='this.onerror=null,this.src="/images/avatar.png"'></div><div class="author-info-name text-[var(--color-card-text)]">Your Name</div><div class="author-info-description text-[var(--color-card-text-secondary)]">這是我的個人簡介</div><div class=site-data><a href=/zh-tw/posts><div class="headline text-[var(--color-card-text-secondary)]">文章</div><div class="length-num text-[var(--color-card-text)]">12</div></a><a href=/zh-tw/tags><div class="headline text-[var(--color-card-text-secondary)]">標籤</div><div class="length-num text-[var(--color-card-text)]">18</div></a><a href=/zh-tw/categories><div class="headline text-[var(--color-card-text-secondary)]">分類</div><div class="length-num text-[var(--color-card-text)]">7</div></a></div><a id=card-info-btn href=https://github.com/ouraihub-hugo-themes/hugo-butterfly target=_blank rel="noopener noreferrer" class=text-[var(--color-card-text)]><i class="fab fa-github"></i><span>Follow Me</span></a><div class=card-info-social-icons><a href=https://github.com/ouraihub-hugo-themes/hugo-butterfly target=_blank rel="noopener noreferrer" class=social-icon title=GitHub style=color:#24292e><i class="fab fa-github"></i>
+</a><a href=https://twitter.com/yourusername target=_blank rel="noopener noreferrer" class=social-icon title=Twitter style=color:#1da1f2><i class="fab fa-twitter"></i>
+</a><a href=mailto:your.email@example.com target=_blank rel="noopener noreferrer" class=social-icon title=Email style=color:#4a7dbe><i class="fas fa-envelope"></i></a></div></div><div id=card-announcement class="card-widget card-announcement"><div class=item-headline><i class="fas fa-bullhorn text-red-500"></i>
+<span>公告</span></div><div class="announcement-content text-[var(--color-card-text)]">歡迎訪問我的部落格！</div></div><div class=sticky_layout><div class="card-widget card-recent-post rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 mb-5"><div class="item-headline flex items-center text-lg font-semibold mb-4"><i class="fas fa-history mr-2 text-primary"></i>
+<span>最新文章</span></div><div class="aside-list space-y-0"><div class="aside-list-item flex items-center py-3"><a href=/zh-tw/2025/10/hugo-butterfly-theme-feature-showcase/ title="测試文章：Hugo Butterfly 主题功能展示" class="thumbnail flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden group"><div style=background:ZgotmplZ class="w-full h-full transition-transform duration-300 group-hover:scale-110"></div></a><div class="content flex-1 pl-3 min-w-0"><a href=/zh-tw/2025/10/hugo-butterfly-theme-feature-showcase/ title="测試文章：Hugo Butterfly 主题功能展示" class="title block text-[var(--color-card-text)] hover:text-primary transition-colors duration-200 line-clamp-2 leading-relaxed text-sm">测試文章：Hugo Butterfly 主题功能展示
+</a><time datetime=2025-10-30T15:17:59+08:00 title="發佈於 2025-10-30 15:17:59" class="block text-xs text-[var(--color-card-text-secondary)] mt-1">2025-10-30</time></div></div><div class="aside-list-item flex items-center py-3 border-t border-dashed border-gray-200/40 dark:border-gray-600/30"><a href=/zh-tw/2025/10/english-toc-test/ title="English TOC Test" class="thumbnail flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden group"><div style=background:ZgotmplZ class="w-full h-full transition-transform duration-300 group-hover:scale-110"></div></a><div class="content flex-1 pl-3 min-w-0"><a href=/zh-tw/2025/10/english-toc-test/ title="English TOC Test" class="title block text-[var(--color-card-text)] hover:text-primary transition-colors duration-200 line-clamp-2 leading-relaxed text-sm">English TOC Test
+</a><time datetime=2025-10-30T11:00:00+08:00 title="發佈於 2025-10-30 11:00:00" class="block text-xs text-[var(--color-card-text-secondary)] mt-1">2025-10-30</time></div></div><div class="aside-list-item flex items-center py-3 border-t border-dashed border-gray-200/40 dark:border-gray-600/30"><a href=/zh-tw/2025/10/simple-toc-test/ title="简单 TOC 测試" class="thumbnail flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden group"><div style=background:ZgotmplZ class="w-full h-full transition-transform duration-300 group-hover:scale-110"></div></a><div class="content flex-1 pl-3 min-w-0"><a href=/zh-tw/2025/10/simple-toc-test/ title="简单 TOC 测試" class="title block text-[var(--color-card-text)] hover:text-primary transition-colors duration-200 line-clamp-2 leading-relaxed text-sm">简单 TOC 测試
+</a><time datetime=2025-10-30T10:00:00+08:00 title="發佈於 2025-10-30 10:00:00" class="block text-xs text-[var(--color-card-text-secondary)] mt-1">2025-10-30</time></div></div><div class="aside-list-item flex items-center py-3 border-t border-dashed border-gray-200/40 dark:border-gray-600/30"><a href=/zh-tw/2025/10/testing-table-of-contents-functionality/ title=测試文章目录功能 class="thumbnail flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden group"><div style=background:ZgotmplZ class="w-full h-full transition-transform duration-300 group-hover:scale-110"></div></a><div class="content flex-1 pl-3 min-w-0"><a href=/zh-tw/2025/10/testing-table-of-contents-functionality/ title=测試文章目录功能 class="title block text-[var(--color-card-text)] hover:text-primary transition-colors duration-200 line-clamp-2 leading-relaxed text-sm">测試文章目录功能
+</a><time datetime=2025-10-29T15:00:00+08:00 title="發佈於 2025-10-29 15:00:00" class="block text-xs text-[var(--color-card-text-secondary)] mt-1">2025-10-29</time></div></div><div class="aside-list-item flex items-center py-3 border-t border-dashed border-gray-200/40 dark:border-gray-600/30"><a href=/zh-tw/2024/10/code-highlighting-test/ title=代码高亮测試 class="thumbnail flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden group"><div style=background:ZgotmplZ class="w-full h-full transition-transform duration-300 group-hover:scale-110"></div></a><div class="content flex-1 pl-3 min-w-0"><a href=/zh-tw/2024/10/code-highlighting-test/ title=代码高亮测試 class="title block text-[var(--color-card-text)] hover:text-primary transition-colors duration-200 line-clamp-2 leading-relaxed text-sm">代码高亮测試
+</a><time datetime=2024-10-30T10:00:00+08:00 title="發佈於 2024-10-30 10:00:00" class="block text-xs text-[var(--color-card-text-secondary)] mt-1">2024-10-30</time></div></div></div></div><div id=card-categories class="card-widget card-categories"><div class=item-headline><i class="fas fa-folder-open"></i>
+<span>分類</span></div><ul class=card-category-list><li class=card-category-list-item><a href=/zh-tw/categories/%E5%85%AC%E5%91%8A/><span class=card-category-list-name>公告</span>
+<span class=card-category-list-count>1</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E5%89%8D%E7%AB%AF/><span class=card-category-list-name>前端</span>
+<span class=card-category-list-count>1</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E6%8A%80%E8%A1%93/><span class=card-category-list-name>技術</span>
+<span class=card-category-list-count>3</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E6%95%99%E7%A8%8B/><span class=card-category-list-name>教程</span>
+<span class=card-category-list-count>1</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E6%B5%8B%E8%A9%A6/><span class=card-category-list-name>测試</span>
+<span class=card-category-list-count>2</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E7%B7%A8%E7%A8%8B/><span class=card-category-list-name>編程</span>
+<span class=card-category-list-count>1</span></a></li><li class=card-category-list-item><a href=/zh-tw/categories/%E8%A8%AD%E8%A8%88/><span class=card-category-list-name>設計</span>
+<span class=card-category-list-count>1</span></a></li></ul></div><div id=card-tags class="card-widget card-tags"><div class=item-headline><i class="fas fa-tags"></i>
+<span>標籤</span></div><div class=card-tag-cloud><a href=/zh-tw/tags/butterfly/>butterfly</a><a href=/zh-tw/tags/css/>css</a><a href=/zh-tw/tags/hugo/>hugo</a><a href=/zh-tw/tags/javascript/>javascript</a><a href=/zh-tw/tags/tailwind/>tailwind</a><a href=/zh-tw/tags/toc/>toc</a><a href=/zh-tw/tags/typescript/>typescript</a><a href=/zh-tw/tags/ui/ux/>ui/ux</a><a href=/zh-tw/tags/%E4%B8%BB%E9%A2%98%E9%96%8B%E7%99%BC/>主题開發</a><a href=/zh-tw/tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/>代码高亮</a><a href=/zh-tw/tags/%E5%85%A5%E9%96%80/>入門</a><a href=/zh-tw/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%A9%A6/>功能测試</a><a href=/zh-tw/tags/%E5%93%8D%E6%87%89%E5%BC%8F/>响應式</a><a href=/zh-tw/tags/%E6%B5%8B%E8%A9%A6/>测試</a><a href=/zh-tw/tags/%E7%9B%AE%E5%BD%95/>目录</a><a href=/zh-tw/tags/%E7%BD%AE%E9%A1%B6/>置顶</a><a href=/zh-tw/tags/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/>返回顶部</a><a href=/zh-tw/tags/%E9%87%8D%E8%A6%81/>重要</a></div></div><div id=card-archives class="card-widget card-archives"><div class=item-headline><i class="fas fa-archive"></i>
+<span>歸檔</span></div><ul class=card-archive-list><li class=card-archive-list-item><a href=/archives/><span>2025-10</span>
+<span>4</span></a></li><li class=card-archive-list-item><a href=/archives/><span>2024-10</span>
+<span>8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class=item-headline><i class="fas fa-chart-line"></i>
+<span>網站資訊</span></div><div class=webinfo><div class=webinfo-item><div class=item-name>文章數目:</div><div class=item-count>13</div></div><div class=webinfo-item><div class=item-name>分類數目:</div><div class=item-count>7</div></div><div class=webinfo-item><div class=item-name>標籤數目:</div><div class=item-count>18</div></div><div class=webinfo-item><div class=item-name>運行天數:</div><div class=item-count id=runtimeshow data-publish-date=2024-01-01><i class="fas fa-spinner fa-spin"></i></div></div><div class=webinfo-item><div class=item-name>最後更新:</div><div class=item-count id=last-push-date data-last-push-date=2025-10-30T16:00:00+08:00><i class="fas fa-spinner fa-spin"></i></div></div></div></div></div></aside></div></main><footer id=footer class="relative bg-[#49b1f5] dark:bg-gray-900 text-gray-100"><div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div><div class=relative><div class="footer-other py-8 md:py-10 px-4 text-center"><div class="footer-copyright text-sm md:text-base"><span class=copyright>&copy;&nbsp;2024 - 2025&nbsp;By Your Name
+</span><span class=framework-info><span class="footer-separator mx-1">|</span><span>框架&nbsp;</span>
+<a href=https://gohugo.io target=_blank rel="noopener noreferrer" class="hover:text-white transition-colors duration-300">Hugo&nbsp;0.152.2
+</a><span class="footer-separator mx-1">|</span>
+<span>主題&nbsp;</span>
+<a href=https://github.com/yourusername/hugo-butterfly target=_blank rel="noopener noreferrer" class="hover:text-white transition-colors duration-300">Butterfly</a></span></div><div class="footer-social mt-6 flex justify-center items-center gap-4 flex-wrap"><a href=https://github.com/ouraihub-hugo-themes/hugo-butterfly target=_blank rel="noopener noreferrer" title=GitHub class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110" style=--social-color:#24292e><i class="fab fa-github text-lg"></i>
+</a><a href=https://twitter.com/yourusername target=_blank rel="noopener noreferrer" title=Twitter class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110" style=--social-color:#1da1f2><i class="fab fa-twitter text-lg"></i>
+</a><a href=mailto:your.email@example.com target=_blank rel="noopener noreferrer" title=Email class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-110" style=--social-color:#4a7dbe><i class="fas fa-envelope text-lg"></i></a></div><div class="footer-runtime mt-6 text-xs md:text-sm opacity-80"><span id=runtime-days>網站已運行 <span class=runtime-count>0</span> 天</span></div><script>(function(){const t=new Date("2024-01-01").getTime();function e(){const n=(new Date).getTime(),s=n-t,o=Math.floor(s/(1e3*60*60*24)),e=document.querySelector(".runtime-count");e&&(e.textContent=o)}e(),setInterval(e,6e4)})()</script></div></div></footer></div><div id=rightside><div id=rightside-config-hide><button id=readmode type=button title=阅读模式>
+<i class="fas fa-book-open"></i>
+</button><button id=darkmode type=button title=切换主题 data-darkmode-toggle>
+<i class="fas fa-adjust"></i></button><div style=position:relative;display:inline-block><button type=button title=主题色彩 data-theme-switcher-btn aria-label="Switch theme color">
+<i class="fas fa-palette"></i></button><div data-theme-panel><div data-theme-category><div data-theme-category-title>冷色系</div><div data-theme-grid><button type=button data-theme-item=sapphire aria-pressed=false title=sapphire tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=purple aria-pressed=false title=purple tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=cyan aria-pressed=false title=cyan tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=cool-gray aria-pressed=false title=cool-gray tabindex=0>
+<span data-theme-name></span></button></div></div><div data-theme-category><div data-theme-category-title>暖色系</div><div data-theme-grid><button type=button data-theme-item=crimson aria-pressed=false title=crimson tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=orange aria-pressed=false title=orange tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=pink aria-pressed=false title=pink tabindex=0>
+<span data-theme-name></span>
+</button><button type=button data-theme-item=brown aria-pressed=false title=brown tabindex=0>
+<span data-theme-name></span></button></div></div></div></div><button id=hide-aside-btn type=button title=隐藏侧边栏>
+<i class="fas fa-arrows-alt-h"></i></button></div><div id=rightside-config-show><button id=rightside-config type=button title=设置>
+<i class="fas fa-cog"></i>
+</button><button id=go-up type=button title=返回頂部 data-back-to-top>
+<span class=scroll-percent></span>
+<i class="fas fa-arrow-up"></i></button></div></div><div id=local-search><div class=search-dialog><nav class=search-nav><span class=search-dialog-title>搜尋</span>
+<i class="fas fa-spinner fa-pulse" id=loading-status hidden></i>
+<button class=search-close-button aria-label=關閉搜尋>
+<i class="fas fa-times"></i></button></nav><div class=local-search-input><input type=text id=pagefind-search-input placeholder=搜索文章... aria-label=搜索输入框 autocomplete=off></div><hr><div id=local-search-results></div><div id=local-search-stats></div></div><div id=search-mask></div></div><script type=module>
+  
+  (async () => {
+    try {
+      const module = await import('/_pagefind/pagefind.js');
+      window.pagefind = module.default || module;
+      console.log('✨ Pagefind module loaded successfully');
+
+      
+      const waitForInit = () => {
+        if (typeof window.initPagefindSearch === 'function') {
+          window.initPagefindSearch();
+          console.log('✨ Pagefind search initialized');
+        } else {
+          
+          setTimeout(waitForInit, 100);
+        }
+      };
+
+      waitForInit();
+    } catch (err) {
+      console.error('❌ Failed to load pagefind module:', err);
+    }
+  })();
+</script><meta name=lightbox-config content='{"type":"fancybox","selector":"#article-container img","excludeClass":"no-lightbox"}'><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.css><script src=https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js defer></script><style>.dark .fancybox__backdrop{background:rgba(0,0,0,.95)}.dark .fancybox__toolbar{background:rgba(0,0,0,.8)}.fancybox__button{transition:all .3s ease}.fancybox__button:hover{background:rgba(255,255,255,.1)}.fancybox__caption{padding:1rem;text-align:center;font-size:.875rem;color:rgba(255,255,255,.9)}</style><script>(function(){const t=()=>{try{const e=localStorage.getItem("theme-mode");if(e)return e}catch{}return window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"},e=t();document.documentElement.setAttribute("data-theme",e),e==="dark"&&document.documentElement.classList.add("dark")})()</script><script src=/js/bundle.min.b52684014b1906f9efbdc158283f43c0f6413d2f3c9b771a0b31b0618e57ce34.js integrity="sha256-tSaEAUsZBvnvvcFYKD9DwPZBPS88m3caCzGwYY5XzjQ=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/js/all.min.js defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css><script src=https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js defer></script><script>document.addEventListener("DOMContentLoaded",()=>{Fancybox.bind("[data-fancybox]",{})})</script><script>window.searchConfig={enable:!0,type:"pagefind",path:"/index.json",preload:!1,topNPerArticle:1,unescape:!1,pagination:{enable:!1,hitsPerPage:10},languages:{hits_stats:"找到 ${hits} 条结果",hits_empty:'未找到 "${query}" 的搜索结果'}}</script></body></html>

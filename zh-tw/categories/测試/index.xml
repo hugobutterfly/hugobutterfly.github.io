@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>测試 on 我的 Butterfly 部落格</title><link>https://hugobutterfly.github.io/zh-tw/categories/%E6%B5%8B%E8%A9%A6/</link><description>Recent content in 测試 on 我的 Butterfly 部落格</description><generator>Hugo</generator><language>zh-TW</language><managingEditor>your.email@example.com (Your Name)</managingEditor><webMaster>your.email@example.com (Your Name)</webMaster><lastBuildDate>Wed, 29 Oct 2025 15:00:00 +0800</lastBuildDate><atom:link href="https://hugobutterfly.github.io/zh-tw/categories/%E6%B5%8B%E8%A9%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>测試文章目录功能</title><link>https://hugobutterfly.github.io/zh-tw/2025/10/testing-table-of-contents-functionality/</link><pubDate>Wed, 29 Oct 2025 15:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/zh-tw/2025/10/testing-table-of-contents-functionality/</guid><description>&lt;p&gt;這是一篇用于测試文章目录（TOC）功能的文章。文章包含多级标题，用于验證目录的生成、滚動高亮和點擊跳轉功能。&lt;/p&gt;</description></item><item><title>测試返回顶部功能</title><link>https://hugobutterfly.github.io/zh-tw/2024/10/testing-back-to-top-functionality/</link><pubDate>Tue, 29 Oct 2024 15:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/zh-tw/2024/10/testing-back-to-top-functionality/</guid><description>&lt;h1 id="返回顶部功能测試"&gt;返回顶部功能测試&lt;/h1&gt;
+&lt;p&gt;這是一篇用于测試返回顶部功能的長文章。當你向下滚動超過 300px 時，應该會在右下角看到一個返回顶部按钮。&lt;/p&gt;
+&lt;h2 id="功能特性"&gt;功能特性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;滚動监聽&lt;/strong&gt; - 當滚動超過 300px 時显示按钮&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平滑滚動&lt;/strong&gt; - 點擊按钮平滑滚動到顶部&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;滚動百分比&lt;/strong&gt; - 显示當前滚動的百分比&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;淡入淡出動画&lt;/strong&gt; - 按钮显示/隐藏時有平滑的動画效果&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响應式設計&lt;/strong&gt; - 在移動端和桌面端都有良好的显示效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="第一部分介绍"&gt;第一部分：介绍&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description></item></channel></rss>

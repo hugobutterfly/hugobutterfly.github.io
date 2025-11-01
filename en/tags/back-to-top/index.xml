@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Back to Top on My Butterfly Blog</title><link>https://hugobutterfly.github.io/en/tags/back-to-top/</link><description>Recent content in Back to Top on My Butterfly Blog</description><generator>Hugo</generator><language>en-US</language><managingEditor>your.email@example.com (Your Name)</managingEditor><webMaster>your.email@example.com (Your Name)</webMaster><lastBuildDate>Tue, 29 Oct 2024 15:00:00 +0800</lastBuildDate><atom:link href="https://hugobutterfly.github.io/en/tags/back-to-top/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing Back to Top Functionality</title><link>https://hugobutterfly.github.io/en/2024/10/testing-back-to-top-functionality/</link><pubDate>Tue, 29 Oct 2024 15:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/en/2024/10/testing-back-to-top-functionality/</guid><description>&lt;h1 id="back-to-top-functionality-test"&gt;Back to Top Functionality Test&lt;/h1&gt;
+&lt;p&gt;This is a long article for testing the back to top functionality. When you scroll down more than 300px, you should see a back to top button in the bottom right corner.&lt;/p&gt;
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Scroll Monitoring&lt;/strong&gt; - Button appears when scrolling exceeds 300px&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smooth Scrolling&lt;/strong&gt; - Clicking the button smoothly scrolls to the top&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scroll Percentage&lt;/strong&gt; - Displays current scroll percentage&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fade Animation&lt;/strong&gt; - Smooth animation when button appears/disappears&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive Design&lt;/strong&gt; - Good display on both mobile and desktop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="part-1-introduction"&gt;Part 1: Introduction&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;</description></item></channel></rss>

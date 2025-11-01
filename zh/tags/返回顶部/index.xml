@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>返回顶部 on 我的 Butterfly 博客</title><link>https://hugobutterfly.github.io/zh/tags/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/</link><description>Recent content in 返回顶部 on 我的 Butterfly 博客</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>your.email@example.com (Your Name)</managingEditor><webMaster>your.email@example.com (Your Name)</webMaster><lastBuildDate>Tue, 29 Oct 2024 15:00:00 +0800</lastBuildDate><atom:link href="https://hugobutterfly.github.io/zh/tags/%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>测试返回顶部功能</title><link>https://hugobutterfly.github.io/zh/2024/10/testing-back-to-top-functionality/</link><pubDate>Tue, 29 Oct 2024 15:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/zh/2024/10/testing-back-to-top-functionality/</guid><description>&lt;h1 id="返回顶部功能测试"&gt;返回顶部功能测试&lt;/h1&gt;
+&lt;p&gt;这是一篇用于测试返回顶部功能的长文章。当你向下滚动超过 300px 时，应该会在右下角看到一个返回顶部按钮。&lt;/p&gt;
+&lt;h2 id="功能特性"&gt;功能特性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;滚动监听&lt;/strong&gt; - 当滚动超过 300px 时显示按钮&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平滑滚动&lt;/strong&gt; - 点击按钮平滑滚动到顶部&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;滚动百分比&lt;/strong&gt; - 显示当前滚动的百分比&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;淡入淡出动画&lt;/strong&gt; - 按钮显示/隐藏时有平滑的动画效果&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式设计&lt;/strong&gt; - 在移动端和桌面端都有良好的显示效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="第一部分介绍"&gt;第一部分：介绍&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description></item></channel></rss>

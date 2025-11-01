@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Important on My Butterfly Blog</title><link>https://hugobutterfly.github.io/en/tags/important/</link><description>Recent content in Important on My Butterfly Blog</description><generator>Hugo</generator><language>en-US</language><managingEditor>your.email@example.com (Your Name)</managingEditor><webMaster>your.email@example.com (Your Name)</webMaster><lastBuildDate>Tue, 29 Oct 2024 15:00:00 +0800</lastBuildDate><atom:link href="https://hugobutterfly.github.io/en/tags/important/index.xml" rel="self" type="application/rss+xml"/><item><title>Pinned Post: Important Announcement</title><link>https://hugobutterfly.github.io/en/2024/10/pinned-post-important-announcement/</link><pubDate>Mon, 28 Oct 2024 10:00:00 +0800</pubDate><author>your.email@example.com (Your Name)</author><guid>https://hugobutterfly.github.io/en/2024/10/pinned-post-important-announcement/</guid><description>&lt;h1 id="important-announcement"&gt;Important Announcement&lt;/h1&gt;
+&lt;p&gt;This is a pinned post that will always be displayed at the top of the post list.&lt;/p&gt;
+&lt;h2 id="pinning-feature"&gt;Pinning Feature&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;top: true&lt;/code&gt; or &lt;code&gt;sticky: 1&lt;/code&gt; to pin a post&lt;/li&gt;
+&lt;li&gt;Pinned posts display a pin icon&lt;/li&gt;
+&lt;li&gt;Pinned posts are prioritized over regular posts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="test-content"&gt;Test Content&lt;/h2&gt;
+&lt;p&gt;This post is used to test whether the theme&amp;rsquo;s pinning functionality works correctly.&lt;/p&gt;</description></item></channel></rss>
